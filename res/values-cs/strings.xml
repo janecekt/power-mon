@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerMon</string>
+    <string name="notification">Sledování napájení a beterie je aktivní</string>
+
+    <string name="menu.preferences">Nastavení</string>
+
+    <!-- Status Messages -->
+    <string name="status.on">ZAP</string>
+    <string name="status.off">VYP</string>
+    <string name="status.overallState">* Monitorování - %1$s\n* SMS Odesílaní - %2$s</string>
+    <string name="status.overallPhoneSettings">* Telefon - %1$s</string>
+    <string name="status.overallAlertSettings">* SMS slabá bat. - %1$d%%\n* SMS běh na bat. - %2$ds</string>
+
+    <string name="lowBatteryMonitor.status">Baterie - %1$s%% - %2$s</string>
+    <string name="lowBatteryMonitor.batteryOk">OK</string>
+    <string name="lowBatteryMonitor.batteryLow">SLABÁ</string>
+
+    <string name="powerStateMonitor.status">Napájení - %1$s</string>
+    <string name="powerStateMonitor.ac">EL-SÍŤ</string>
+    <string name="powerStateMonitor.batteryMessagePending">BAT_ČEKÁNÍ</string>
+    <string name="powerStateMonitor.batteryMessageSent">BAT_POSLÁNO</string>
+
+    <!-- SMS Messages -->
+    <string name="sms.statusReply">POWER-MON-ODPOVĚĎ - STAV\n%1$s</string>
+    <string name="sms.errorReply">POWER-MON-ODPOVĚĎ - Neplatný příkaz použíjte jeden z nasledujících\n%1$s</string>
+    <string name="sms.lowBattery">POWER-MON - Běh na baterii a baterie je slabá (baterie - %1$d%%)!</string>
+    <string name="sms.batteryOk">POWER-MON - Baterie je OK nebo se nabíjí (baterie - %1$d%%)!</string>
+    <string name="sms.runningOnBattery">POWER-MON - Napájení z baterie !</string>
+    <string name="sms.runningOnAC">POWER-MON - Napájení z elektrické sítě !</string>
+
+    <!-- Preferences -->
+    <string name="pref.mainTitle">PowerMon nastavení</string>
+
+    <string name="pref.title.monitoringEnabled">Monitorování zapnuto</string>
+    <string name="pref.summary.monitoringEnabled">Monitorování zapnuto</string>
+
+    <string name="pref.title.smsSendEnabled">Odesílaní SMS zapnuto</string>
+    <string name="pref.summary.smsSendEnabled">SMS varování se odešle pouze pokud je tato volba aktivní</string>
+
+    <string name="pref.title.onBatteryThreshold">Výstraha běhu na baterii [s]</string>
+    <string name="pref.summary.onBatteryThreshold">Doba ve vteřinách po které se pošle SMS po přepnutí na baterii.</string>
+
+    <string name="pref.title.lowBatteryThreshold">Výstraha slabé baterie [%%]</string>
+    <string name="pref.summary.lowBatteryThreshold">Pokud baterie klesne pod tuto hranici odešle se SMS varování.</string>
+
+    <string name="pref.title.alertPhoneNumber1">Telefon 1</string>
+    <string name="pref.summary.alertPhoneNumber1">Telefon 1 na který se posílají varovné SMS</string>
+
+    <string name="pref.title.alertPhoneNumber2">Telefon 2</string>
+    <string name="pref.summary.alertPhoneNumber2">Telefon 2 na který se posílají varovné SMS</string>
+
+    <string name="pref.key.alertPhoneNumber3">prefAlertPhoneNumber3</string>
+    <string name="pref.title.alertPhoneNumber3">Telefon 3</string>
+    <string name="pref.summary.alertPhoneNumber3">Telefon 3 na který se posílají varovné SMS</string>
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerMon</string>
+    <string name="notification">Monitoring of power and battery is active</string>
+
+    <string name="menu.preferences">Preferences</string>
+
+    <!-- Status Messages -->
+    <string name="status.on">ON</string>
+    <string name="status.off">OFF</string>
+    <string name="status.overallState">* Monitoring - %1$s\n* SMS Send - %2$s</string>
+    <string name="status.overallPhoneSettings">* Phone - %1$s</string>
+    <string name="status.overallAlertSettings">* Low Bat Alert - %1$d%%\n* On Bat Alert - %2$ds</string>
+
+    <string name="lowBatteryMonitor.status">Battery - %1$s%% - %2$s</string>
+    <string name="lowBatteryMonitor.batteryOk">OK</string>
+    <string name="lowBatteryMonitor.batteryLow">LOW</string>
+
+    <string name="powerStateMonitor.status">Power - %1$s</string>
+    <string name="powerStateMonitor.ac">AC</string>
+    <string name="powerStateMonitor.batteryMessagePending">BAT_MSG_WAIT</string>
+    <string name="powerStateMonitor.batteryMessageSent">BAT_MSG_SENT</string>
+
+    <!-- SMS Messages -->
+    <string name="sms.statusReply">POWER-MON-REPLY - STATUS\n%1$s</string>
+    <string name="sms.errorReply">POWER-MON-REPLY - Invalid command use one of\n%1$s</string>
+    <string name="sms.lowBattery">POWER-MON - Running on battery and battery is low (battery - %1$d%%)!</string>
+    <string name="sms.batteryOk">POWER-MON - Battery is OK or charging (battery - %1$d%%)!</string>
+    <string name="sms.runningOnBattery">POWER-MON - Running on battery !</string>
+    <string name="sms.runningOnAC">POWER-MON - Running on AC !</string>
+
+    <!-- Preferences -->
+    <string name="pref.mainTitle">PowerMon preferences</string>
+
+    <string name="pref.key.monitoringEnabled">prefMonitoringEnabled</string>
+    <string name="pref.title.monitoringEnabled">Monitoring Enabled</string>
+    <string name="pref.summary.monitoringEnabled">Monitoring Enabled</string>
+
+    <string name="pref.key.smsSendEnabled">prefSmsEnabled</string>
+    <string name="pref.title.smsSendEnabled">Send SMS enabled</string>
+    <string name="pref.summary.smsSendEnabled">If enabled SMS alerts are sent if disabled nothing is sent</string>
+
+    <string name="pref.key.onBatteryThreshold">prefOnBatteryThreshold</string>
+    <string name="pref.title.onBatteryThreshold">On Battery Threshold</string>
+    <string name="pref.summary.onBatteryThreshold">Time in seconds after which and alert is sent if we are running on battery</string>
+
+    <string name="pref.key.lowBatteryThreshold">prefLowBatteryThreshold</string>
+    <string name="pref.title.lowBatteryThreshold">Low Battery Precentage</string>
+    <string name="pref.summary.lowBatteryThreshold">Percentage bellow which Low-Battery-Alert will be sent.</string>
+
+    <string name="pref.key.alertPhoneNumber1">prefAlertPhoneNumber1</string>
+    <string name="pref.title.alertPhoneNumber1">Alert Phone Number 1</string>
+    <string name="pref.summary.alertPhoneNumber1">Phone number 1 to send SMS alerts to</string>
+
+    <string name="pref.key.alertPhoneNumber2">prefAlertPhoneNumber2</string>
+    <string name="pref.title.alertPhoneNumber2">Alert Phone Number 2</string>
+    <string name="pref.summary.alertPhoneNumber2">Phone number 2 to send SMS alerts to</string>
+
+    <string name="pref.key.alertPhoneNumber3">prefAlertPhoneNumber3</string>
+    <string name="pref.title.alertPhoneNumber3">Alert Phone Number 3</string>
+    <string name="pref.summary.alertPhoneNumber3">Phone number 3 to send SMS alerts to</string>
+
+</resources>

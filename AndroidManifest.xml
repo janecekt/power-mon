@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.powermon"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application android:name=".guice.PowerMonApplication"
+                 android:label="@string/app_name"
+                 android:debuggable="true">
+
+        <activity android:name=".activity.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.PreferencesActivity"
+                  android:label="@string/pref.mainTitle">
+        </activity>
+
+        <!-- Subscibe to boot-up events -->
+        <receiver android:name=".receiver.SmsIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Subscribe to SMS received events -->
+        <receiver android:name=".receiver.SmsIntentReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="com.android.powermon.SmsIntentReceiver_SENDSTATUS" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="@string/pref.mainTitle">
+
+    <PreferenceCategory android:title="Server Config">
+        <CheckBoxPreference
+                android:key="@string/pref.key.monitoringEnabled"
+                android:defaultValue="false"
+                android:title="@string/pref.title.monitoringEnabled"
+                android:summary="@string/pref.summary.monitoringEnabled"/>
+
+        <CheckBoxPreference
+                android:key="@string/pref.key.smsSendEnabled"
+                android:defaultValue="false"
+                android:title="@string/pref.title.smsSendEnabled"
+                android:summary="@string/pref.summary.smsSendEnabled"/>
+
+        <EditTextPreference
+                android:key="@string/pref.key.onBatteryThreshold"
+                android:inputType="number"
+                android:defaultValue="300"
+                android:title="@string/pref.title.onBatteryThreshold"
+                android:summary="@string/pref.summary.onBatteryThreshold"/>
+
+        <EditTextPreference
+                android:key="@string/pref.key.lowBatteryThreshold"
+                android:inputType="number"
+                android:defaultValue="20"
+                android:title="@string/pref.title.lowBatteryThreshold"
+                android:summary="@string/pref.summary.lowBatteryThreshold"/>
+
+        <EditTextPreference
+                android:key="@string/pref.key.alertPhoneNumber1"
+                android:inputType="number"
+                android:title="@string/pref.title.alertPhoneNumber1"
+                android:summary="@string/pref.summary.alertPhoneNumber1"/>
+
+
+        <EditTextPreference
+                android:key="@string/pref.key.alertPhoneNumber2"
+                android:inputType="number"
+                android:title="@string/pref.title.alertPhoneNumber2"
+                android:summary="@string/pref.summary.alertPhoneNumber2"/>
+
+
+        <EditTextPreference
+                android:key="@string/pref.key.alertPhoneNumber3"
+                android:inputType="number"
+                android:title="@string/pref.title.alertPhoneNumber3"
+                android:summary="@string/pref.summary.alertPhoneNumber3"/>
+    </PreferenceCategory>
+</PreferenceScreen>
