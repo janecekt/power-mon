@@ -58,7 +58,7 @@ public class EventBroker {
         }
 
         public boolean isApplicableFor(Class<?> eventType) {
-            return eventType.isAssignableFrom(eventClass);
+            return eventClass.isAssignableFrom(eventType);
         }
 
         public EventListener<T> getListener() {
