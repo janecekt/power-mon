@@ -9,3 +9,8 @@
   * SMS alerts will be sent to you if
     * If power goes out and/or comes back up.
     * If battery becomes low.
+
+# Contributions #
+  * **If you wish to contribute and/or submit a pull request please do so on GitLab**
+  * The repository is maintained on GitLab [https://gitlab.com/janecekt/power-mon](https://gitlab.com/janecekt/power-mon) 
+  * It is mirrored to GitHub as a read-only copy but it is not maintained there any more
